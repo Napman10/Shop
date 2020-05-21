@@ -1,0 +1,100 @@
+[
+    {
+      "model": "auth.User",
+      "pk": 1,
+      "fields": {
+        "username": "thefirst",
+        "password": "any",
+        "first_name": "Первый",
+        "last_name": "Из Первых",
+        "email": "fstsss@gmail.com"
+      }
+    },
+    {
+      "model": "auth.User",
+      "pk": 4,
+      "fields": {
+        "username": "tapir",
+        "password": "anyt",
+        "first_name": "Тапир",
+        "last_name": "Денисов",
+        "email": "sndsss@gmail.com"
+      }
+    },
+    {
+        "model": "BlogApp.UserStatus",
+        "pk": 1,
+        "fields": {
+            "user":1,
+            "status":"Я первый!"
+        }
+      },
+      {
+        "model": "BlogApp.UserStatus",
+        "pk": 4,
+        "fields": {
+            "user":4,
+            "status":"Я тапир"
+        }
+      },
+      {
+        "model": "BlogApp.UserImage",
+        "pk": 1,
+        "fields": {
+            "user":1,
+            "photo":"users/initcat.jpg"
+        }
+      },
+      {
+        "model": "BlogApp.UserImage",
+        "pk": 4,
+        "fields": {
+            "user":4,
+            "photo":"users/tapir.jpg"
+        }
+      },
+      {
+        "model": "BlogApp.Article",
+        "pk": 1,
+        "fields": {
+            "user":1,
+            "title":"Успешно",
+            "text":"успешно ввел начальные данные",
+            "author_name":"thefirst",
+            "datetime":"2020-01-01T01:01:00.365579"        
+        }
+      },
+      {
+        "model": "BlogApp.Article",
+        "pk": 2,
+        "fields": {
+            "user":1,
+            "title":"Второй пост",
+            "text":"а мы всё пытаемся",
+            "author_name":"thefirst",
+            "datetime":"2020-01-05T01:01:00.365579"        
+        }
+      },
+      {
+        "model": "BlogApp.Article",
+        "pk": 3,
+        "fields": {
+            "user":4,
+            "title":"Думаю",
+            "text":"первая запись тапира в интернете (почти)",
+            "author_name":"tapir",
+            "datetime":"2020-01-08T01:01:00.365579"        
+        }
+      },
+      {
+        "model": "BlogApp.Article",
+        "pk": 4,
+        "fields": {
+            "user":4,
+            "title":"Уже не думаю",
+            "text":"ы",
+            "author_name":"tapir",
+            "datetime":"2020-01-10T01:01:00.365579"        
+        }
+      }
+  ]
